@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detail Pendaftar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav">
+      <div>
+        <h1>Detail Pendaftar</h1>
+        <p>Halaman ini memakai data dummy.</p>
+      </div>
+      <a href="pendaftaran.html">Kembali ke pendaftaran</a>
+    </div>
+  </header>
+
+  <main class="layout">
+
+    <!-- Kolom kiri: tabel data pendaftar (dummy) -->
+    <section class="box">
+      <table>
+        <caption>Data Pendaftar</caption>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Isi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Nama Lengkap</th>
+            <td>Wafi Ziqra Maulana</td>
+          </tr>
+          <tr>
+            <th scope="row">NIM</th>
+            <td>124140043</td>
+          </tr>
+          <tr>
+            <th scope="row">Tanggal Lahir</th>
+            <td>20 Maret 2005</td>
+          </tr>
+          <tr>
+            <th scope="row">Email</th>
+            <td>wafi@example.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Jenis Kelamin</th>
+            <td>Laki-laki</td>
+          </tr>
+          <tr>
+            <th scope="row">Kelas</th>
+            <td>RC</td>
+          </tr>
+          <tr>
+            <th scope="row">Waktu Sesi</th>
+            <td>13:00</td>
+          </tr>
+          <tr>
+            <th scope="row">Topik yang diminati</th>
+            <td>HTML dan CSS, Flexbox dan Grid</td>
+          </tr>
+          <tr>
+            <th scope="row">Alasan Mengikuti</th>
+            <td>Ingin belajar membuat halaman web yang rapi dan responsif.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Kolom kanan -->
+    <aside>
+      <!-- Microformats: hCard untuk informasi kontak -->
+      <div class="box hcard">
+        <h2>Kontak</h2>
+        <div class="fn">Wafi Ziqra Maulana</div>
+        <div class="org">Institut Teknologi Sumatera</div>
+        <div class="email">wafi@example.com</div>
+      </div>
+
+      <div class="box catatan">
+        <h2>Query String</h2>
+        <p>Data dari halaman pendaftaran dikirim lewat URL seperti ini:</p>
+        <code>detail.html?nama=Wafi+Ziqra+Maulana&amp;nim=124140043&amp;email=wafi%40example.com&amp;tgl_lahir=2005-03-20&amp;gender=Laki-laki&amp;kelas=RC&amp;sesi=13%3A00&amp;minat=HTML+dan+CSS&amp;minat=Flexbox+dan+Grid&amp;motivasi=...</code>
+        <p>Halaman ini hanya menampilkan data dummy, belum membaca query string.</p>
+      </div>
+    </aside>
+
+  </main>
+
+</body>
+</html>
